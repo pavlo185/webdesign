@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Ласкаво просимо до Автосалону Audi</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="services.html">Наші послуги</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="paralax.html">Паралакс</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="content">
+        <div class="left-content">
+            <img src="IMAGES/a.jpg" alt="Фото автомобіля">
+        </div>
+        <div class="right-content">
+           <p>Модель: Audi RS7</p>
+           <p>Рік:2023</p>
+           <p>Ціна: 138500$</p>
+           <p>Опис:Тип двигуна
+            8-циліндровий V-подібний бензиновий двигун, Mild Hybrid Electric Vehicle (MHEV)
+            Робочий об’єм
+            3996 куб см.
+            Макс. потужність
+            441 кВт (600 к.с.) при 6000-6250 об/хв
+            Система нейтралізації відпрацьованих газів
+            Каталізатор, лямбда-зонд, бензиновий сажевий фільтр Трансмісія
+            Тип привода
+            Постійний повний привод quattro
+            Зчеплення
+            8-ст tiptronic
+            Тип КПП
+            Гідротрансформатор із муфтою блокування
+            </p>
+        </div>
+    </section>
+    <section class="content">
+
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <label for="title">Назва:</label>
+            <input type="text" id="title" name="title" required>
+        
+            <label for="year">Рік:</label>
+            <input type="number" id="year" name="year" required>
+        
+            <label for="price">Ціна:</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+        
+            <label for="description">Опис:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+        
+            <label for="file">Завантажити файл:</label>
+            <input type="file" id="file" name="file" required>
+        
+            <button type="submit">Зберегти</button>
+        </form>
+    </section>
+    <button type="submit">Показати ще</button>
+        <footer>
+            <p>&copy; 2024 Автосалон. Всі права захищені.</p>
+        </footer>
+</body>
+</html>
