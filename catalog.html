@@ -6,46 +6,10 @@
     <title>catalog</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        form {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        input[type="text"],
-        input[type="number"],
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="file"] {
-            margin-bottom: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background-color: #4CAF50;
-            color: white;
-            font-size: 16px;
-        }
+      
     </style>
 </head>
-<body>
+<body id="models">
     <header>
         <div class="header-content">
             <h1>Ласкаво просимо до Автосалону Audi</h1>
@@ -61,7 +25,7 @@
             </nav>
         </div>
     </header>
-    <section class="content">
+    <section id="modelSection" class="content">
         <div class="left-content">
             <img src="IMAGES/a.jpg" alt="Фото автомобіля">
         </div>
@@ -88,7 +52,7 @@
     </section>
     <section class="content">
 
-        <form action="/submit" method="post" enctype="multipart/form-data">
+        <form id="consForm" action="/submit" method="post" enctype="multipart/form-data">
             <label for="title">Назва:</label>
             <input type="text" id="title" name="title" required>
         
@@ -104,12 +68,15 @@
             <label for="file">Завантажити файл:</label>
             <input type="file" id="file" name="file" required>
         
-            <button type="submit">Зберегти</button>
+            <button id="upload" type="submit">Зберегти</button>
         </form>
     </section>
-    <button type="submit">Показати ще</button>
+    <div>
+        <button id="showmore" type="submit">Показати ще</button>
+    </div>
         <footer>
             <p>&copy; 2024 Автосалон. Всі права захищені.</p>
         </footer>
+        <script src="client.js"></script>
 </body>
 </html>
