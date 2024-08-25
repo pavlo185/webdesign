@@ -20,13 +20,13 @@ body, html {
 }
 
 header {
-    background-image: url('IMAGES/EaD.gif');
+    background-image: url('IMAGES/EaD_full.gif');
     color: #fff;
     text-align: center;
     padding: 40px 20px;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,4 +71,37 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    header, nav, section, footer {
+        padding: 10px;
+    }
+
+    .parallax {
+        background-attachment: scroll; 
+        height: 50vh;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .header-content {
+        padding: 10px;
+    }
+
+    #img1 {
+        background-image: url('IMAGES/parallax1_r.WebP');
+    }
+    #img2 {
+        background-image: url('IMAGES/Audi-A8_r.WebP');
+    }
+    #img3 {
+        background-image: url('IMAGES/Audi-Q4_r.WebP');
+    }
+    #img4 {
+        background-image: url('IMAGES/audi_e-tron_r.WebP');
+    }
 }

@@ -31,13 +31,13 @@ input[type="file"] {
     margin-bottom: 10px;
 }
 header {
-    background-image: url('IMAGES/EaD.gif');
+    background-image: url('IMAGES/EaD_full.gif');
     color: #fff;
     text-align: center;
     padding: 40px 20px;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px; 
+    height: 350px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -205,5 +205,33 @@ footer {
 button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+@media (max-width: 768px) {
+    header, nav, section, footer {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .header-content {
+        padding: 10px;
+    }
+
+    .image-row img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .service-maintenance-repair img,
+    .service-new-cars img,
+    .service-financial-services img {
+        max-width: 100%;
+    }
+    header {
+        background-image: url('IMAGES/EaD.gif');
+    }   
 }
 
