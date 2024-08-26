@@ -199,10 +199,27 @@ footer {
     cursor: pointer;
     font-size: 1em;
     position: relative; 
-     /* z-index: 1000;  */
+    
 }
 
-button:disabled {
+.but {
+    display: inline-block; 
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+.but:last-child {
+    margin-right: 0; 
+}
+
+#popupButton {
+    margin: 15px;
+}
+#changestyleButton {
+    margin: 15px;
+}
+button:disabled
+ {
     background-color: #ccc;
     cursor: not-allowed;
 }
@@ -233,6 +250,8 @@ button:disabled {
     header {
         background-image: url('IMAGES/4.WebP');
     }   
-   
+    
+    
 }
+
 
