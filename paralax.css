@@ -85,7 +85,7 @@ footer {
 
     nav ul li {
         display: block;
-        margin: 5px 0;
+        margin: 6,5%;
     }
 
     .header-content {
@@ -104,4 +104,7 @@ footer {
     #img4 {
         background-image: url('IMAGES/audi_e-tron_r.WebP');
     }
+    header {
+        background-image: url('IMAGES/4.WebP');
+    }   
 }

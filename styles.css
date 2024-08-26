@@ -133,7 +133,7 @@ form input[type="text"], form input[type="email"], form textarea {
 form button {
     padding: 10px 20px;
     border: none;
-    background-color: #007bff;
+    background-color: #10f708;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
@@ -213,7 +213,7 @@ button:disabled {
 
     nav ul li {
         display: block;
-        margin: 5px 0;
+        margin: 6,5%;
     }
 
     .header-content {
@@ -231,7 +231,8 @@ button:disabled {
         max-width: 100%;
     }
     header {
-        background-image: url('IMAGES/EaD.WebM');
+        background-image: url('IMAGES/4.WebP');
     }   
+   
 }
 

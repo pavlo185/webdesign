@@ -93,9 +93,12 @@ footer {
     }
     nav ul li {
         display: block;
-        margin: 5px 0;
+        margin: 6,5%;
     }
     .header-content {
         padding: 10px;
     }
+    header {
+        background-image: url('IMAGES/4.WebP');
+    }   
 }
